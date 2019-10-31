@@ -1,0 +1,45 @@
+.banner{
+  width: 200px !important;
+  display: inline-block;
+}
+
+.margin_gral{
+  margin: 0px auto;
+
+}
+
+.grilla1{
+  width: 50% !important;
+  display: inline-block;
+  float: left;
+}
+
+.grilla2{
+  width: 40% !important;
+  display: inline-block;
+  float: left;
+
+}
+.bloques{
+  display: inline-block;
+}
+
+.tabla2_att_house{
+  width: 45% !important;
+  display: inline-block !important;
+
+
+
+}
+.tabla3_att_house{
+  width: 45% !important;
+  display: inline-block !important;
+
+
+
+}
+
+.footer{
+  background-color: lightblue;
+
+}

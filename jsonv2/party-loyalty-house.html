@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="main_style.css">
+  <style media="screen">
+    table {
+      width: 80% !important;
+      margin: 0px auto;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="w-75 margin_gral">
+    <div class="d-block text-center ">
+
+      <img src="images/logotgifhome.jpg" alt="TGIF_LOGO" class="banner d-inline-block ">
+      <div class="d-inline-block w-50">
+        <h1>Transparent Government In Fact</h1>
+      </div>
+      <a href="mailto:info@tgif.net?subject=feedback" class="d-inline-block ">info@tgif.net</a>
+    </div>
+
+
+    <!-- nav bar -->
+    <div>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Congress
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="house-data.html">House</a>
+                <a class="dropdown-item" href="senate-data.html">Senate</a>
+              </div>
+
+            </li>
+            <li class="nav-item dropdown">
+
+              <a class="nav-link dropdown-toggle" href="#" id="Attendance" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Attendance
+              </a>
+              <div class="dropdown-menu" aria-labelledby="Attendance">
+                <a class="dropdown-item" href="Attendance-house.html">House</a>
+                <a class="dropdown-item" href="Attendance-senate.html">Senate</a>
+              </div>
+
+            </li>
+            <li class="nav-item dropdown">
+
+              <a class="nav-link dropdown-toggle" href="#" id="Party_loyalty" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Party Loyalty
+              </a>
+              <div class="dropdown-menu" aria-labelledby="Party_loyalty">
+                <a class="dropdown-item" href="party-loyalty-house.html">House</a>
+                <a class="dropdown-item" href="party-loyalty-senate.html">Senate</a>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+
+
+
+    <div class="grilla_gral text-center">
+      <div class="bloques">
+
+        <div class="grilla1 text-left">
+          <h2>Party Loyalty</h2>
+          <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda. </p>
+        </div>
+
+        <div class="grilla2 ">
+          <h2>Senate at a glance</h2>
+          <table class=" table table-hover table-borderless">
+            <thead>
+              <tr>
+                <th>Party</th>
+                <th>Number of Reps</th>
+                <th>% Voted with Prty</th>
+              </tr>
+            </thead>
+            <tbody id="sen_at_glance_loyalty_id">
+
+
+            </tbody>
+          </table>
+        </div>
+      </div><!-- FIN DEL PRIMER BLOQUE -->
+
+
+      <div class="bloques text-center">
+
+        <div class="tabla2_att_house">
+          <h2>Least Loyal (Bottom 10% of Party)</h2>
+          <table class=" table table-hover table-borderless">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Number Party Votes</th>
+                <th>% Party Votes</th>
+              </tr>
+            </thead>
+            <tbody id="house_least_loyal">
+
+            </tbody>
+          </table>
+        </div>
+        <div class="tabla3_att_house">
+          <h2>Most Loyal (Top 10% of Party)</h2>
+          <table class=" table table-hover table-borderless">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Number Party Votes</th>
+                <th>% Party Votes</th>
+              </tr>
+            </thead>
+            <tbody id="house_most_loyal">
+
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <table id="house-data" class=" table table-hover table-borderless">
+
+    </table>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2016 TGIF | All Rights Reserved
+
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+  </div>
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="main_index.js">
+
+  </script>
+  <script type="text/javascript" src="party_loyalty_house_script_fetch.js">
+
+  </script>
+
+
+</body>
+
+</html>
